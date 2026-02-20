@@ -10,10 +10,10 @@
     "@types/bun": "latest"
   },
   "peerDependencies": {
-    "typescript": "^5"
+    "typescript": "^5.9.3"
   },
   "dependencies": {
-    "hono": "^4.10.4",
-    "wrec": "0.15.1"
+    "hono": "^4.12.0",
+    "wrec": "0.20.4"
   }
 }
