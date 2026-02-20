@@ -1,4 +1,6 @@
 // Copy node_modules/wrec/dist/wrec.es.js to the public directory.
+// This is needed because this project does not use Vite
+// to bundle the code needed on the client side.
 import { css, html, Wrec } from "./wrec.es.js";
 
 class HelloWorld extends Wrec {
