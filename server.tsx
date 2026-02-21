@@ -3,7 +3,8 @@ import { serveStatic } from "hono/bun";
 
 const app = new Hono();
 
-// Serve static files from public directory.
+// Serve static files from public and dist directories.
+app.use("/*", serveStatic({ root: "./dist" }));
 app.use("/*", serveStatic({ root: "./public" }));
 
 app.get("/greet", (c: Context) => {
